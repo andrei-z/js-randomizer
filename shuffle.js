@@ -1,5 +1,6 @@
 /**
  * JS Randomizer
+ * source: https://github.com/andrei-z/js-randomizer
  * 
  * Possible todo list:
  * TODO: replace alerts with inner html 
