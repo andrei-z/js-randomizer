@@ -9,11 +9,11 @@
  
 function randomizer(){
 shuffleBtn = document.getElementById('shuffle');
-showOneBtn = document.getElementById('show-one');
+showLuckyBtn = document.getElementById('lucky-one');
 showAllBtn = document.getElementById('show-all');
 resetClearBtn = document.getElementById('reset-clear');
 
-showOneBtn.disabled = true;
+showLuckyBtn.disabled = true;
 showAllBtn.disabled = true;
 
 shuffleBtn.onclick = function(){
@@ -22,7 +22,7 @@ shuffleBtn.onclick = function(){
   let max = document.getElementById('to').value;
 
   if((min <1 || min == "") || (max <1 || max == "")){
-    showOneBtn.disabled = true;
+    showLuckyBtn.disabled = true;
     showAllBtn.disabled = true;
     alert("Please provide 'from' and 'to' with natural numbers\n (1, 50, 4, 37 etc)");
     return;
@@ -53,7 +53,7 @@ shuffleBtn.onclick = function(){
   };
 
   if(numbers.length >0){
-    showOneBtn.disabled = false;
+    showLuckyBtn.disabled = false;
     showAllBtn.disabled = false;
   };
 
@@ -64,7 +64,7 @@ shuffleBtn.onclick = function(){
   let sNumbers = numbers;
 
   // Randomly select and show a single number from the previously generated array
-  showOneBtn.onclick = function(){
+  showLuckyBtn.onclick = function(){
     let num = sNumbers[Math.floor(Math.random() * sNumbers.length)];
 
     h1.appendChild(document.createTextNode(num + '\t'));
@@ -74,7 +74,7 @@ shuffleBtn.onclick = function(){
     sNumbers.splice(sNumbers.indexOf(num),1);
 
     if (sNumbers.length === 0){
-      showOneBtn.disabled = true;
+      showLuckyBtn.disabled = true;
       showAllBtn.disabled = true;
       console.log('All numbers shown');
     }
@@ -94,7 +94,7 @@ shuffleBtn.onclick = function(){
     }
 
     if (sNumbers.length === 0){
-      showOneBtn.disabled = true;
+      showLuckyBtn.disabled = true;
       showAllBtn.disabled = true;
       console.log('Showed all');
     }
@@ -106,7 +106,7 @@ resetClearBtn.onclick = function (){
   numbers = [];
   document.getElementById('from').value="1";
   document.getElementById('to').value="10";
-  showOneBtn.disabled = true;
+  showLuckyBtn.disabled = true;
   showAllBtn.disabled = true;
   console.clear();
 
