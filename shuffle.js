@@ -1,5 +1,5 @@
 /**
- * JS Lucky Numbers 
+ * JS Randomizer
  * 
  * Possible todo list:
  * TODO: replace alerts with inner html 
