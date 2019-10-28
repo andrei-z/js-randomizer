@@ -1,6 +1,6 @@
 # js-randomizer
 ### JavaScript with HTML demo</br>
-_JS Lucky Numbers_ app shuffles a given numeric range and outputs the numbers in a pseudo-random manner.</br></br>
+_JS Randomizer_ app shuffles a given numeric range and outputs the numbers in a pseudo-random manner.</br></br>
 Utilizing Math.random() to achieve randomness.</br></br>
 
 **Shuffle** - generates an array of unsorted (shuffled) numbers out of the provided range</br>
