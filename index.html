@@ -8,9 +8,15 @@
   <title>JS Randomizer</title>
 </head>
 <body onload="javascript:randomizer()" style="background-color:#E0DBC7">
-  <div>Set numeric range</div>
-  <div>from <input type="number" id="from" value="1"> to
-  <input type="number" id="to" value="10"> 
+  <div>Set numeric range [0-999]</div>
+
+  <div>from <input name="fromField" 
+    oninput="javascript: if (this.value.length > this.maxLength)
+    this.value = this.value.slice(0, this.maxLength);" maxlength="3" type="number" id="from" value="1"> to
+
+  <input name="toField" oninput="javascript: if (this.value.length > this.maxLength)
+    this.value = this.value.slice(0,this.maxLength);" maxlength="3" type="number" id="to" value="10"> 
+
   <button id="shuffle">Shuffle</button>
   <button id="lucky-one">Lucky One</button>
   <button id="show-all">Show All</button>
