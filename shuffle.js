@@ -16,13 +16,12 @@ function randomizer() {
   showLuckyBtn.disabled = true;
   showAllBtn.disabled = true;
 
-  shuffleAndShow()
-  resetAndClear()
+  shuffleAndShow();
+  resetAndClear();
 }
 
 function shuffleAndShow() {
   shuffleBtn.onclick = () => {
-
     const min = from.value;
     const max = to.value;
 
@@ -59,6 +58,7 @@ function generate(min, max) {
     max = min;
     min = swap;
   };
+
   // Generate an array of unique random numbers within the given range
   let numbers = [];
   let randomNumber = 0;
