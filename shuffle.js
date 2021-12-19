@@ -85,10 +85,7 @@ function showNumbers(arr) {
   const el = document.createElement('h1')
 
   function showAll(showAll) {
-    let count = 1;
-    if (showAll) {
-      count = arr.length;
-    }
+    let count = showAll ? arr.length : 1;
 
     for (let i = count; i > 0; i--) {
       let num = arr[Math.floor(Math.random() * arr.length)];
