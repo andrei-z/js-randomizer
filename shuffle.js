@@ -10,6 +10,8 @@ function randomizer() {
   showLuckyBtn = document.getElementById('lucky-one');
   showAllBtn = document.getElementById('show-all');
   resetClearBtn = document.getElementById('reset-clear');
+  from = document.getElementById('from');
+  to = document.getElementById('to');
 
   showLuckyBtn.disabled = true;
   showAllBtn.disabled = true;
@@ -21,8 +23,8 @@ function randomizer() {
 function shuffleAndShow() {
   shuffleBtn.onclick = () => {
 
-    const min = document.getElementById('from').value;
-    const max = document.getElementById('to').value;
+    const min = from.value;
+    const max = to.value;
 
     validateInput(min, max);
     const numbers = generate(min, max);
@@ -117,8 +119,8 @@ function resetAndClear() {
   // Clear the page and restore settings (Reset & Clear)
   resetClearBtn.onclick = () => {
     numbers = [];
-    document.getElementById('from').value = "1";
-    document.getElementById('to').value = "10";
+    from.value = "1";
+    to.value = "10";
     showLuckyBtn.disabled = true;
     showAllBtn.disabled = true;
     console.clear();
