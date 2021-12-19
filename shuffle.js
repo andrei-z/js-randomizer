@@ -24,11 +24,9 @@ function shuffleAndShow() {
     const min = document.getElementById('from').value;
     const max = document.getElementById('to').value;
 
-    validateInput(min, max)
-
-    const numbers = generate(min, max)
-
-    showNumbers(numbers)
+    validateInput(min, max);
+    const numbers = generate(min, max);
+    showNumbers(numbers);
   }
 }
 
@@ -78,7 +76,7 @@ function generate(min, max) {
   };
 
   console.log(`Generated * ${numbers.length} * numbers`);
-  return numbers
+  return numbers;
 }
 
 function showNumbers(arr) {
@@ -102,17 +100,16 @@ function showNumbers(arr) {
       showAllBtn.disabled = true;
       console.log('Showed all');
     }
-
   }
 
   // Show one random number (Lucky One)
   showLuckyBtn.onclick = () => {
-    showAll(false)
+    showAll(false);
   }
 
   // Show all random numbers (Show All)
   showAllBtn.onclick = () => {
-    showAll(true)
+    showAll(true);
   }
 }
 
