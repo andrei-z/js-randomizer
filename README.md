@@ -1,5 +1,5 @@
 # js-randomizer
-### Javascript random numbers generatior</br>
+### Javascript random numbers generator</br>
 _JS Randomizer_ app shuffles a given numeric range and outputs the numbers in a pseudo-random manner.</br></br>
 Utilizing Math.random() to achieve randomness.</br></br>
 
