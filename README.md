@@ -9,4 +9,4 @@ Utilizing Math.random() to achieve randomness.</br></br>
 **Reset & Clear** - clears out the output by deleting web elements from the DOM and restores default values
 
 Demo:
-https://andrei-z.github.io/js-randomizer/
+https://dersc.github.io/js-randomizer/
